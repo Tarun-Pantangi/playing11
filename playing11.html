@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard11</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(220, 203, 252);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .playing {
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px; /* Increased the max-width for a better layout */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+    }
+
+    form {
+      width: 50%;
+      
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      text-align: left;
+      block-size: -10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-top: 15px;
+      cursor: pointer;
+      background-color: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Scoreboard11</h1>
+  </header>
+
+  <div class="playing">
+    <form id="playing11Form" onsubmit="submitForm(event)">
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" name="player1" required>
+    
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" name="player2" required>
+    
+        <label for="player3">Player 3:</label>
+        <input type="text" id="player3" name="player3" required>
+
+        <label for="player4">Player 4:</label>
+        <input type="text" id="player4" name="player4" required>
+
+        <label for="player5">Player 5:</label>
+        <input type="text" id="player5" name="player5" required>
+
+        <label for="player6">Player 6:</label>
+        <input type="text" id="player6" name="player6" required>
+
+        <label for="player7">Player 7:</label>
+        <input type="text" id="player7" name="player7" required>
+
+        <label for="player8">Player 8:</label>
+        <input type="text" id="player8" name="player8" required>
+
+        <label for="player9">Player 9:</label>
+        <input type="text" id="player9" name="player9" required>
+
+        <label for="player10">Player 10:</label>
+        <input type="text" id="player10" name="player10" required>
+
+        <label for="player11">Player 11:</label>
+        <input type="text" id="player11" name="player11" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Access the values entered by the user
+      const player1 = document.getElementById('player1').value;
+      const player2 = document.getElementById('player2').value;
+      const player3 = document.getElementById('player3').value;
+      const player4 = document.getElementById('player4').value;
+      const player5 = document.getElementById('player5').value;
+      const player6 = document.getElementById('player6').value;
+      const player7 = document.getElementById('player7').value;
+      const player8 = document.getElementById('player8').value;
+      const player9 = document.getElementById('player9').value;
+      const player10 = document.getElementById('player10').value;
+      const player11 = document.getElementById('player11').value;
+
+      // You can handle the player names as needed, for example, display them or send them to the server
+      console.log('Playing 11 submitted:');
+      console.log('Player 1:', player1);
+      console.log('Player 2:', player2);
+      console.log('Player 3:', player3);
+      console.log('Player 4:', player4);
+      console.log('Player 5:', player5);
+      console.log('Player 6:', player6);
+      console.log('Player 7:', player7);
+      console.log('Player 8:', player8);
+      console.log('Player 9:', player9);
+      console.log('Player 10:', player10);
+      console.log('Player 11:', player11);
+
+      // Add additional logic as needed
+    }
+  </script>
+
+</body>
+</html>
